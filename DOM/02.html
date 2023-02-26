@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- event listner -->
+    <h1>event listner</h1>
+    <button id="try">try it</button>
+    <p id="demo"></p>
+
+    <br /><br /><br /><br />
+    <button id="other">try this</button>\
+    <br /><br /><br /><br />
+    <p id="para"></p>
+    <script>
+      document.getElementById("try").addEventListener("click", getdate);
+
+      function getdate() {
+        document.getElementById("demo").innerHTML = Date();
+        document.getElementById("try").innerHTML = "see result";
+      }
+
+      document.getElementById("other").addEventListener("click", btnalert);
+      function btnalert() {
+        document.getElementById("other").innerHTML = "welcome";
+      }
+
+      let x = document.getElementById("other");
+      x.addEventListener("click", myfunction);
+      x.addEventListener("click", otherfun);
+
+      function myfunction() {
+        alert("welcome");
+      }
+      function otherfun() {
+        alert("executed");
+
+      }
+  
+
+// window event 
+
+window.addEventListener("resize",function(){
+document.getElementById("para").innerHTML="you change windows"
+})
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      \
+      <li>hellow</li>
+      <li id="intro">hellow</li>
+      <li>hellow</li>
+      <li>hellow</li>
+      <li>hellow</li>
+      <li>hellow</li>
+    </ul>
+    <ol id="ol">
+      <li >my web</li>
+      <li>my web</li>
+      <li>my web</li> 
+    </ol>
+
+    <p>this is paragraph</p>
+    <script>
+      // transversing of Element
+      let elm = document.getElementById("intro");
+      console.log(elm);
+
+      //   select parent
+
+      let prt = elm.parentElement;
+      console.log(prt);
+
+      //  Selection of sibling
+
+      let chid = (elm.previousElementSibling.innerHTML = "welcome");
+      console.log(chid);
+
+      let next = (elm.nextElementSibling.innerHTML = "user");
+      console.log(next);
+
+    //    Selection of sibling
+
+    let list=document.getElementById("ol")
+    console.log(list)
+
+    let chld=list.childElementCount
+    console.log(chld)
+
+    let para=document.getElementsByTagName('p')
+    console.log(para.innerHTML)
+// create and append
+
+
+let h2=document.createElement("h2")
+let text=document.createTextNode("this is h2")
+h2.append(text)
+elm.append(h2)
+
+// remove Element
+
+document.body.removeChild(ol)
+   
+
+    </script>
+  </body>
+</html>

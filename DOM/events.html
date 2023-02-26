@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>onclick event</h1>
+    <button id="btn" onclick="btnclick()">click me !</button>
+
+    <h1>mouse over event</h1>
+    <button id="btn" onmouseover="onhover()">mouse over me!</button>
+
+    <h1>mouse out event</h1>
+    <button id="btn" onmouseover="onOut()">mouse out me!</button>
+
+    <!-- get date  -->
+
+    <h1><button id="datecheck"  onclick="getdate()" >Get date</button>
+    </h1>
+    <script>
+      function btnclick() {
+        alert("you clicked button");
+      }
+
+      function onhover() {
+        alert("you hover over mi");      
+      }
+
+      function onOut() {
+        alert("you out mouse");
+      }
+
+      function getdate() {
+        document.getElementById("datecheck").innerHTML = Date();
+      }
+    </script>
+  </body>
+</html>
