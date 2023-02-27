@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        height: 3000px;
+      }
+    </style>
+    <p id="para">this is paragraph</p>
+    <h1>hahahahahaha</h1>
+  
+   <input type="button" value="Go back" onclick="goback ">
+
+   <!-- <button id="btn" onclick="var my=setTimeout(setTime(),3000)"> click</button> -->
+
+    <script>
+      // window
+      //   window.open("https://www.google.com");
+      document.getElementById("para").innerHTML = screen.availWidth;
+      document.getElementById("para").innerHTML = screen.availHeight;
+      document.getElementById("para").innerHTML = screen.colorDepth;
+
+      //   location
+
+      document.getElementById("para").innerHTML = window.location.host;
+      document.getElementById("para").innerHTML = window.location.href;
+      document.getElementById("para").innerHTML = window.location.pathname;
+      //   document.getElementById("para").innerHTML = window.location.hash
+      // document.getElementById("para").innerHTML =window.location.replace("https://www.google.com")
+
+      // history
+      function goback() {
+        window.history.forward();
+      }
+
+
+    //   navigator
+    document.getElementById("para").innerHTML = window.navigator.userAgent;
+    document.getElementById("para").innerHTML = window.navigator.platform;
+    document.getElementById("para").innerHTML = window.navigator.appCodeName;
+    document.getElementById("para").innerHTML = window.navigator.cookieEnabled;
+    document.getElementById("para").innerHTML = window.navigator.appVersion;
+
+
+
+    // PerformanceTiming
+
+
+// document.getElementById("btn").innerHTML=setTime()
+
+setTimeout(setTime,2000)
+    function setTime(){
+        alert('subscribe us!')
+    }
+
+    </script>
+  </body>
+</html>

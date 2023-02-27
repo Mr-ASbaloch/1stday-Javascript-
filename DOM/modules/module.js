@@ -1,2 +1,2 @@
-import { sum } from "./module1";
-sum(2,4)
+import { sum } from "./module1.js";
+sum(4,4)
